@@ -3,8 +3,9 @@ const fs = require("fs");
 const path = require("path");
 
 const backupConfig = {
-  s3BucketName: 'maksstaticwebsite/static',
+  s3BucketName: 'maksstaticwebsite',
 	folderPath: './static',
+	staticSiteFolder: '/static',
 	region: 'eu-central-1'
 };
 
@@ -34,7 +35,7 @@ AWS.config.getCredentials(function(err) {
 						if (error) { throw error; }
 		
 						s3.putObject({
-							Bucket: backupConfig.s3BucketName,
+							Bucket: backupConfig.s3BucketName+backupConfig.staticSiteFolder,
 							Key: fileName,
 							Body: fileContent
 						}, (res) => {
