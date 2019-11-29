@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "uuid": "^3.3.3"
+  },
+  "name": "aws-scripts-application",
+  "description": "Node.js AWS SDK",
+  "version": "0.0.1",
+  "main": "sample.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maks Yuzva",
+  "license": "ISC"
+}
