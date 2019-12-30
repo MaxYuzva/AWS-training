@@ -13,6 +13,7 @@ const s3 = new AWS.S3({apiVersion: '2006-03-01'});
 const distFolderPath = path.join(__dirname, backupConfig.folderPath);
 
 
+
 AWS.config.getCredentials(function(err) {
   if (err) console.log(err.stack);
   else {
