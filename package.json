@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "json2csv": "^4.5.4",
-    "uuid": "^3.3.3"
+    "uuid": "^14.0.0"
   },
   "name": "aws-scripts-application",
   "description": "Node.js AWS SDK",
